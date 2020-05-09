@@ -7,6 +7,8 @@ import InputLink from './Links/InputLink';
 import ListLinks from './Links/ListLinks';
 import InputTodo from './Todos/InputTodo';
 import ListTodos from './Todos/ListTodos';
+import ListTicks from './Ticks/ListTicks';
+import ListNews from './News/ListNews';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,10 +60,16 @@ const CenteredGrid = () => {
         </Grid>
         <Grid item xs={5} container>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>Ticks</Paper>
+            <Paper className={classes.paper}>
+            <h6>Ticks</h6>
+            
+            </Paper>
           </Grid>
           <Grid item xs={12}>
-            <Paper className={`${classes.paper} ${classes.calendar}`}>News/Charts</Paper>
+            <Paper className={`${classes.paper} ${classes.calendar}`}>
+              News/Charts
+              <ListNews/>
+            </Paper>
           </Grid>
         </Grid>
         <Grid item xs={2} container>
